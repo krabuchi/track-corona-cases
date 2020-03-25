@@ -24,7 +24,6 @@ class Tracker extends Component {
             countries: keys
         });
         this.changeCountry(this.state.country);
-        console.log(this.state.countries)
     }
     async changeCountry(value) {
         let url = `https://covid19.mathdro.id/api/countries/${value}`;
