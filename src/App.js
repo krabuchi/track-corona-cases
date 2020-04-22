@@ -1,15 +1,18 @@
-import React from 'react';
-import './App.css';
-import Tracker from './components/tracker';
-import Header from './components/header';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Tracker />
-    </div>
-  );
+import { Cards, Charts, CountryPicker } from "./components";
+import styles from "./App.module.css";
+
+class App extends Component {
+  render() {
+    return (
+      <div className={styles.container}>
+        <Cards />
+        <CountryPicker />
+        <Charts />
+      </div>
+    );
+  }
 }
 
 export default App;
