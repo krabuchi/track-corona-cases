@@ -27,8 +27,8 @@ class App extends Component {
     return (
       <div className={styles.container}>
         <h1>COVID-19</h1>
-        <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <Cards data={data} />
         <Charts data={data} country={country} />
       </div>
     );
